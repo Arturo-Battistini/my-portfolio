@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { Contexto } from '../../../Contexto/index'
 // eslint-disable-next-line react/prop-types
-const SkillsCard = ({ skill, skill2, skill3, skill4, spaSkill, serviceSelected }) => {
+const SkillsCard = ({ skill, skill2, skill3, skill4, engTitle, serviceSelected }) => {
   const { language } = useContext(Contexto)
 
   return (
@@ -9,11 +9,11 @@ const SkillsCard = ({ skill, skill2, skill3, skill4, spaSkill, serviceSelected }
 
       <h4 className='portfolio-title after:hidden' >{
         serviceSelected === 1
-          ? !language ? 'Habilidades y Conocimientos en:' : 'Technologies I can contribute with:'
+          ? !language ? 'Tecnologías Frontend & Frameworks:' : engTitle || 'Frontend Technologies & Frameworks:'
           : serviceSelected === 2
-            ? !language ? 'Algunas tecnologías de backend y base de datos de las que tengo conocimientos parciales.' : 'Some backend and database technologies with which I have partial knowledge.'
+            ? !language ? 'Tecnologías Backend & Bases de Datos:' : engTitle || 'Backend Technologies & Databases:'
             : serviceSelected === 3
-              ? !language ? 'Algunas aplicaciones de diseño con las que me gusta trabajar:' : 'Some design applications I enjoy working with:'
+              ? !language ? 'Herramientas de Desarrollo & Diseño:' : engTitle || 'Development Tools & Design:'
               : false}
       </h4>
 

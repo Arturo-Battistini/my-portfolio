@@ -4,7 +4,7 @@ import '../../../index.css'
 // eslint-disable-next-line react/prop-types
 const Card = ({ titulo, description, link }) => {
   return (
-    <div className='card border border-skyblue p-4 rounded-lg '>
+    <div className='card border border-skyblue/10 hover:border-skyblue/30 p-4 rounded-lg bg-[#112240] hover:bg-[#1e3a5f] transition-all duration-300'>
       <div className='header-card flex justify-between mb-3 '>
         <FolderIcon className='w-7 h-7 fill-skyblue ' />
 

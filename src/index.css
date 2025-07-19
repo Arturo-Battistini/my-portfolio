@@ -66,7 +66,10 @@
 
   /* tamaños de las fuentes  */
   .titulo {
-    @apply text-[clamp(35px,8vw,80px)];
+    @apply text-[clamp(30px,7vw,80px)];
+  }
+  .titulo2 {
+    @apply text-[clamp(10px,2vw,80px)];
   }
 
   .letras-p {
@@ -252,6 +255,59 @@ body{
   }
 }
 
+/* Animación bg-pan-left */
+.bg-pan-left {
+	-webkit-animation: bg-pan-left 6s ease-in-out infinite, bg-brightness 6s ease-in-out infinite;
+	        animation: bg-pan-left 6s ease-in-out infinite, bg-brightness 6s ease-in-out infinite;
+	background: linear-gradient(90deg, #64ffda, #8892b0, #64ffda);
+	background-size: 200% 100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+@-webkit-keyframes bg-pan-left {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes bg-pan-left {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes bg-brightness {
+  0% {
+    filter: brightness(1);
+  }
+  25% {
+    filter: brightness(1.3);
+  }
+  50% {
+    filter: brightness(1);
+  }
+  75% {
+    filter: brightness(1.3);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
 /* --------------------------------termina estilos TODOAPP */
 
 /* Media Queryes */
@@ -272,12 +328,12 @@ body{
 
 /* scrollbar */
 ::-webkit-scrollbar-thumb {
-  background: #060e1b;
+  background: #64FFDA;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
   height: 5px;
   background: #133040;
   border-radius: 4px;

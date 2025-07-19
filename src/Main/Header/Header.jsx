@@ -39,7 +39,7 @@ const Header = () => {
               : ''}`}
           >
             <div
-              className="language-container flex gap-2 w-full justify-center items-center mt-1"
+              className="language-container flex gap-2 w-full justify-center items-center mt-1 border border-skyblue p-[5px] rounded-[2px]"
               data-aos="fade-down"
             >
               <GlobeAmericasIcon className="world-icon w-4 h-4 fill-skyblue" />
@@ -108,7 +108,7 @@ const Header = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                {!language ? 'Currículum' : 'Resume'}
+                {!language ? 'Resume' : 'Resume'}
               </a>
             </button>
           </ul>

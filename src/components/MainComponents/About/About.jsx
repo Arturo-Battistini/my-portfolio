@@ -21,30 +21,27 @@ const About = () => {
             {!language
               ? (
               <>
-                El compromiso y la dedicación son la filosofía que me guía en la vida. Para mí, es importante aportar valor a mi entorno y ser útil en cada lugar al que voy. Me apasiona aprender y enfrentar nuevos desafíos.
-                <br /><br />
-                Valoro el debate constructivo que aporte ideas valiosas a mis proyectos.
+                Me considero una persona curiosa y comprometida con el desarrollo de productos digitales útiles y bien pensados. Valoro el trabajo en equipo, el aprendizaje continuo y el intercambio de ideas que enriquecen cada proyecto. Mi objetivo es aportar soluciones prácticas y eficientes, siempre con una visión orientada al usuario.
               </>
                 )
               : (
               <>
-               Commitment and dedication are the philosophy that guides me in life. For me, it’s important to bring value to my surroundings and be helpful wherever I go. I am passionate about learning and facing new challenges.
-              <br /><br />
-              I value constructive discussions that bring valuable ideas to my projects.
+                I consider myself a curious and committed person, focused on developing useful and well-designed digital products. I value teamwork, continuous learning, and the exchange of ideas that enrich every project. My goal is to provide practical and efficient solutions, always with a user-oriented vision.
               </>
                 )}
           </p>
 
           </article>
-          <p>{!language
-            ? (<>Últimas tecnologías utilizadas al <span className='text-skyblue'>15/11/2024</span> en mi último proyecto:</>)
-            : (<>Latest technologies used as of <span className='text-skyblue'>11/15/2024</span> in my most recent project:</>)}</p>
+          <p className='text-skyblue font-semibold mb-2'>{!language
+            ? 'Stack más reciente:'
+            : 'Latest stack:'}</p>
           <article className='aboutme-list-container flex w-full '>
             <ul className='aboutme-list w-full flex flex-wrap gap-3'>
-              <li className='aboutme-item'> {!language ? 'Angular' : 'Angular'}</li>
+              <li className='aboutme-item'> {!language ? 'Angular20' : 'Angular20'}</li>
               <li className='aboutme-item'> {!language ? 'SASS' : 'SASS'}</li>
-              <li className='aboutme-item'> {!language ? 'Node.js' : 'Node.js'}</li>
-              <li className='aboutme-item'> {!language ? 'FireBase' : 'FireBase'}</li>
+              <li className='aboutme-item'> {!language ? 'Nest.js' : 'Nest.js'}</li>
+              <li className='aboutme-item'> {!language ? 'MongoDB' : 'MongoDB'}</li>
+              <li className='aboutme-item'> {!language ? 'Firebase' : 'Firebase'}</li>
             </ul>
           </article>
         </div>
